@@ -1,0 +1,14 @@
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\bin\Debug\net8.0\CapitalGainsProgram.exe
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\bin\Debug\net8.0\CapitalGainsProgram.deps.json
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\bin\Debug\net8.0\CapitalGainsProgram.runtimeconfig.json
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\bin\Debug\net8.0\CapitalGainsProgram.dll
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\bin\Debug\net8.0\CapitalGainsProgram.pdb
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\obj\Debug\net8.0\CapitalGainsProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\obj\Debug\net8.0\CapitalGainsProgram.AssemblyInfoInputs.cache
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\obj\Debug\net8.0\CapitalGainsProgram.AssemblyInfo.cs
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\obj\Debug\net8.0\CapitalGainsProgram.csproj.CoreCompileInputs.cache
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\obj\Debug\net8.0\CapitalGainsProgram.dll
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\obj\Debug\net8.0\refint\CapitalGainsProgram.dll
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\obj\Debug\net8.0\CapitalGainsProgram.pdb
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\obj\Debug\net8.0\CapitalGainsProgram.genruntimeconfig.cache
+C:\Users\cbianchi\Documents\Projects\CapitalGainsProgram\CapitalGainsProgram\obj\Debug\net8.0\ref\CapitalGainsProgram.dll
