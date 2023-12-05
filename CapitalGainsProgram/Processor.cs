@@ -75,41 +75,39 @@ namespace CapitalGainsProgram
                     previousOperationResult.CurrentShareCount - currentOperation.Quantity, 
                     previousOperationResult.CumulatedLoss + loss);
             }
-            else
+
+            decimal tax = 0;
+            var cumulatedLoss = Math.Round(previousOperationResult.CumulatedLoss, 2);
+
+            if (Functions.IsProfit(sellAmountCurrentOperation))
             {
-                decimal tax = 0;
-                var cumulatedLoss = Math.Round(previousOperationResult.CumulatedLoss, 2);
+                var profit = Functions.GetProfitToBeTaxed(
+                    previousOperationResult.CurrentWeightedAverage,
+                    currentOperation.Quantity,
+                    sellAmountCurrentOperation);
 
-                if (Functions.IsProfit(sellAmountCurrentOperation))
+                if (Functions.ShouldDeductLoss(cumulatedLoss))
                 {
-                    var profit = Functions.GetProfitToBeTaxed(
-                        previousOperationResult.CurrentWeightedAverage,
-                        currentOperation.Quantity,
-                        sellAmountCurrentOperation);
-
-                    if (Functions.ShouldDeductLoss(cumulatedLoss))
+                    if (Functions.IsCumulatedLossGreaterOrEqualToProfit(cumulatedLoss, profit))
                     {
-                        if (Functions.IsCumulatedLossGreaterOrEqualToProfit(cumulatedLoss, profit))
-                        {
-                            cumulatedLoss -= profit;
-                        }
-                        else
-                        {
-                            profit -= cumulatedLoss;
-                            tax = Functions.CalculateTax(profit);
-                        }
+                        cumulatedLoss -= profit;
                     }
                     else
                     {
+                        profit -= cumulatedLoss;
                         tax = Functions.CalculateTax(profit);
                     }
                 }
-
-                return Functions.AddTax(tax, 
-                    previousOperationResult.CurrentWeightedAverage, 
-                    previousOperationResult.CurrentShareCount - currentOperation.Quantity, 
-                    cumulatedLoss);
+                else
+                {
+                    tax = Functions.CalculateTax(profit);
+                }
             }
+
+            return Functions.AddTax(tax, 
+                previousOperationResult.CurrentWeightedAverage, 
+                previousOperationResult.CurrentShareCount - currentOperation.Quantity, 
+                cumulatedLoss);
         }
     }
 }
